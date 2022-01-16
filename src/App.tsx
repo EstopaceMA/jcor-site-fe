@@ -1,12 +1,12 @@
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>- JCOR SITE -</p>
-        <p>BUILDING IN PROGRESS....</p>
-      </header>
-    </div>
-  );
-}
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import * as Page from "./pages";
 
-export default App;
+export const App = () => {
+  return (
+    <Routes>
+      <Route path="/" element={<Page.HomePage />} />
+      <Route path="/about" element={<Page.AboutPage />} />
+    </Routes>
+  );
+};
