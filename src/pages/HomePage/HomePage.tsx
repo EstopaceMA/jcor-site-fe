@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import { Section } from "./Homepage.style";
-import { Navigation } from "../../components/organisms/Nav";
+import { Navigation } from "../../components/Nav";
 
 export const HomePage = () => {
   return (

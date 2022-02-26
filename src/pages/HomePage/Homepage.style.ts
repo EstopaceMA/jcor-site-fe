@@ -5,4 +5,5 @@ export const Section = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url(../../assets/images/bg.jpeg);
 `;
