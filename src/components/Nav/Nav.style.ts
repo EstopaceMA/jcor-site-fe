@@ -7,6 +7,7 @@ export const StyledNav = styled.nav`
   width: 100%;
   background-color: #161722;
   display: flex;
+  z-index: 1;
 `;
 
 export const LogoContainer = styled.div`
