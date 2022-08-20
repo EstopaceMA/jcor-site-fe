@@ -3,31 +3,39 @@ import {
   HomeSection,
   HomeContentContainer,
   Button,
+  AboutSection,
+  AboutSectionContainer,
+  AboutSectionHeadline,
+  Headline,
+  SubHeadline,
+  AboutSectionContentContainer,
+  AboutCard,
 } from "./Homepage.style";
-import { Navigation } from "../../components/Nav";
+import { Navbar } from "../../components/Nav/Navbar";
+import { Header } from "./Header";
 
 export const HomePage = () => {
   return (
-    <div>
-      <Navigation />
-      <div>
-        <Section>
-          <HomeSection>
-            <HomeContentContainer>
-              <p style={{ color: "#fff" }}>WELCOME TO OUR CHURCH</p>
-              <p style={{ fontSize: "64px", color: "#fff" }}>BECOME PART OF</p>
-              <p style={{ fontSize: "64px", color: "#fff" }}>OUR COMMUNITY</p>
-              <Button>LEARN MORE</Button>
-            </HomeContentContainer>
-          </HomeSection>
-        </Section>
-        <Section>
-          <h1>Ministries</h1>
-        </Section>
-        <Section>
-          <h1>About</h1>
-        </Section>
-      </div>
-    </div>
+    <>
+      <Navbar />
+      <Section>
+        <Header />
+      </Section>
+      <Section>
+        <AboutSection>
+          <AboutSectionContainer>
+            <AboutSectionHeadline>
+              <SubHeadline>SUB-HEADLINE</SubHeadline>
+              <Headline>A CHURCH THAT'S RELEVANT</Headline>
+            </AboutSectionHeadline>
+            <AboutSectionContentContainer>
+              <AboutCard></AboutCard>
+              <AboutCard></AboutCard>
+              <AboutCard></AboutCard>
+            </AboutSectionContentContainer>
+          </AboutSectionContainer>
+        </AboutSection>
+      </Section>
+    </>
   );
 };

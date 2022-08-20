@@ -66,6 +66,6 @@ export const LogoLabel = styled.p`
   text-transform: uppercase;
   font-style: normal;
   font-weight: normal;
-  color: #fff;
+  /* color: #fff; */
   cursor: pointer;
 `;

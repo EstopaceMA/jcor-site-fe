@@ -9,7 +9,7 @@ import {
   TabLabelsContainer,
   ContactButton,
   LogoLabel,
-} from "./Nav.style";
+} from "./styles";
 
 export const Nav = () => {
   return (
