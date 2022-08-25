@@ -4,7 +4,10 @@ export const Navbar: FC = () => {
   const [navbar, setNavbar] = useState<boolean>(false);
 
   return (
-    <nav className="relative sticky top-0 w-full bg-white backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-300">
+    <nav
+      className="relative sticky top-0 w-full bg-white backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-300"
+      style={{ zIndex: 1 }}
+    >
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
