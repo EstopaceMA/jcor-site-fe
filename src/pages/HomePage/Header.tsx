@@ -10,7 +10,7 @@ export const Header = () => {
           backgroundImage: `linear-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 90%)), url(${bg})`,
         }}
       >
-        <div className="text-center">
+        <div className="text-center px-3">
           <h1 className=" text-white mb-6 text-4xl font-bold uppercase md:text-5xl font-Poppins">
             Jesus Christ is our{" "}
             <span className="text-emerald-500">Redeemer</span>
