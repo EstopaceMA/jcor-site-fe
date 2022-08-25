@@ -13,6 +13,8 @@ import {
 } from "./Homepage.style";
 import { Navbar } from "../../components/Nav/Navbar";
 import { Header } from "./Header";
+import { Footer } from "../../components/Footer";
+import { ScheduleSection } from "../EventsSection";
 
 export const HomePage = () => {
   return (
@@ -21,21 +23,8 @@ export const HomePage = () => {
       <Section>
         <Header />
       </Section>
-      <Section>
-        <AboutSection>
-          <AboutSectionContainer>
-            <AboutSectionHeadline>
-              <SubHeadline>SUB-HEADLINE</SubHeadline>
-              <Headline>A CHURCH THAT'S RELEVANT</Headline>
-            </AboutSectionHeadline>
-            <AboutSectionContentContainer>
-              <AboutCard></AboutCard>
-              <AboutCard></AboutCard>
-              <AboutCard></AboutCard>
-            </AboutSectionContentContainer>
-          </AboutSectionContainer>
-        </AboutSection>
-      </Section>
+      <ScheduleSection />
+      <Footer />
     </>
   );
 };
