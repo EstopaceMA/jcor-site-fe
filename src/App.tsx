@@ -6,13 +6,29 @@ import * as Page from "./pages";
 export const App = () => {
   return (
     <>
-      <Navbar />
       <Routes>
-        <Route path="/" element={<Page.HomePage />} />
-        <Route path="/about" element={<Page.AboutPage />} />
+        <Route
+          path="/"
+          element={
+            <>
+              <Navbar />
+              <Page.HomePage />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <>
+              <Navbar />
+              <Page.AboutPage />
+              <Footer />
+            </>
+          }
+        />
         <Route path="*" element={<Page.NotFound />} />
       </Routes>
-      <Footer />
     </>
   );
 };
