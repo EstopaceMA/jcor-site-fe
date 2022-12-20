@@ -10,6 +10,7 @@ export const App = () => {
       <Routes>
         <Route path="/" element={<Page.HomePage />} />
         <Route path="/about" element={<Page.AboutPage />} />
+        <Route path="*" element={<Page.NotFound />} />
       </Routes>
       <Footer />
     </>

@@ -12,7 +12,7 @@ import {
   AboutCard,
 } from "./Homepage.style";
 import { Header } from "./Header";
-import { ScheduleSection } from "../EventsSection";
+import { EventsSection } from "../EventsSection";
 
 export const HomePage = () => {
   return (
@@ -20,7 +20,7 @@ export const HomePage = () => {
       <Section>
         <Header />
       </Section>
-      <ScheduleSection />
+      <EventsSection />
     </>
   );
 };

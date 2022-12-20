@@ -11,7 +11,7 @@ export const Header = () => {
         }}
       >
         <div className="text-center px-3">
-          <h1 className=" text-white mb-6 text-4xl font-bold uppercase md:text-5xl font-Poppins">
+          <h1 className=" text-white mb-6 text-5xl font-bold uppercase md:text-7xl font-Poppins">
             Jesus Christ our <span className="text-emerald-500">Redeemer</span>
           </h1>
 

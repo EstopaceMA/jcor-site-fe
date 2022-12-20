@@ -1,1 +1,1 @@
-export { ScheduleSection } from "./EventsSection";
+export { EventsSection } from "./EventsSection";

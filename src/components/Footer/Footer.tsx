@@ -77,7 +77,7 @@ export const Footer: FC = () => {
         style={{ backgroundColor: "rgba(0, 0, 0, 0.2);" }}
       >
         © {new Date().getFullYear()} -
-        <a className="text-whitehite" href="https://tailwind-elements.com/">
+        <a className="text-whitehite" href="https://jcor.netlify.app/">
           &nbsp;JCOR
         </a>
       </div>

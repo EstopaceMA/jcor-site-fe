@@ -112,10 +112,10 @@ export const Navbar: FC = () => {
               <li className="text-gray-900 hover:text-emerald-600">
                 <a
                   className="cursor-pointer"
-                  // onClick={(e) => {
-                  //   e.preventDefault();
-                  //   navigate("/about");
-                  // }}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    navigate("/about");
+                  }}
                 >
                   About
                 </a>
