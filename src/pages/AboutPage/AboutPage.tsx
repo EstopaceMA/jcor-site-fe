@@ -1,4 +1,5 @@
 import ChurchHistory from "./history";
+import pastor_lheo from "../../assets/images/pastor_lheo.jpg";
 
 export const AboutPage = () => {
   return (
@@ -18,10 +19,7 @@ export const AboutPage = () => {
 
       <section className="mt-32">
         <div className="flex flex-col md:flex-row items-center md:items-start md:justify-evenly">
-          <img
-            className="w-11/12 md:w-5/12"
-            src="/src/assets/images/pastor_lheo.jpg"
-          />
+          <img className="w-11/12 md:w-5/12" src={pastor_lheo} />
 
           <div className="mt-10 w-11/12 md:w-6/12 text-center md:text-right">
             <p className="text-7xl font-bold">Meet our Lead Pastor</p>
