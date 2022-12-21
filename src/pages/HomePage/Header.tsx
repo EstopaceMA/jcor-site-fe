@@ -1,5 +1,5 @@
 // import Link from "next/link";
-import bg from "../../assets/images/bgwhite.jpeg";
+import bg from "/assets/images/bgwhite.jpeg";
 
 export const Header = () => {
   return (

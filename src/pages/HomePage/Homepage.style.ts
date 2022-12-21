@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import bg from "../../assets/images/bg.jpeg";
+import bg from "/assets/images/bg.jpeg";
 
 export const AboutSection = styled.div`
   display: flex;
