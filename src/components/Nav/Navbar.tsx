@@ -1,7 +1,7 @@
 import { FC, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion, useScroll } from "framer-motion";
-import logo from "../../assets/images/jcor_logo.png";
+import logo from "/assets/images/jcor_logo.png";
 
 const variants = {
   /** this is the "visible" key and it's correlating styles **/
