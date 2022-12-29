@@ -43,9 +43,9 @@ export const Navbar: FC = () => {
       /** it's right here that we match our boolean state with these variant keys **/
       animate={hidden ? "hidden" : "visible"}
       /** I'm also going to add a custom easing curve and duration for the animation **/
-      transition={{ ease: [0.1, 0.25, 0.3, 1], duration: 0.4 }}
-      className="relative sticky top-0 w-full bg-white backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-300"
-      style={{ zIndex: 1 }}
+      transition={{ ease: [0.1, 0.25, 0.3, 1], duration: 0.7 }}
+      className="relative sticky top-0 w-full bg-white backdrop-filter backdrop-blur-lg bg-opacity-25 border-b border-gray-300"
+      style={{ zIndex: 1, position: "absolute" }}
     >
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>

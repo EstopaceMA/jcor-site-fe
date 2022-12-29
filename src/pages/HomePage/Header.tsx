@@ -1,17 +1,19 @@
-// import Link from "next/link";
 import bg from "/assets/images/bgwhite.jpeg";
+import videoBg from "/assets/videos/jcor_vid_cover.mp4";
 
 export const Header = () => {
   return (
     <>
-      <div
-        className="flex flex-col items-center bg-cover bg-center justify-center min-h-screen bg-fixed"
-        style={{
-          backgroundImage: `linear-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 90%)), url(${bg})`,
-        }}
-      >
-        <div className="text-center px-3">
-          <h1 className=" text-white mb-6 text-5xl font-bold uppercase md:text-7xl font-Poppins">
+      <div className="h-screen w-full">
+        <video
+          src={videoBg}
+          autoPlay
+          loop
+          muted
+          className="h-full w-full object-cover"
+        />
+        <div className="flex flex-col justify-center items-center absolute top-0 w-full h-full text-center">
+          <h1 className="text-white mb-6 text-5xl font-bold uppercase md:text-7xl font-Poppins">
             Jesus Christ our <span className="text-emerald-500">Redeemer</span>
           </h1>
 
