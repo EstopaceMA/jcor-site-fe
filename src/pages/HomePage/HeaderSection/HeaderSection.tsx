@@ -1,7 +1,6 @@
-import bg from "/assets/images/bgwhite.jpeg";
 import videoBg from "/assets/videos/jcor_vid_cover.mp4";
 
-export const Header = () => {
+export const HeaderSection = () => {
   return (
     <>
       <div className="h-screen w-full">

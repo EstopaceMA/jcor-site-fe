@@ -3,10 +3,10 @@ import { events } from "./events";
 export const EventsSection = () => {
   return (
     <>
-      <div className="container my-12 mx-auto px-4 md:px-12 text-center">
-        <h1 className="text-3xl">Events and Ministries</h1>
+      <div className="container md:my-12 mx-auto px-4 md:px-12 text-center">
+        <h1 className="text-4xl">Events and Ministries</h1>
       </div>
-      <div className="container my-12 mx-auto px-4 md:px-12">
+      <div className="container my-12 mx-auto px-12 md:px-12">
         <div className="flex flex-wrap -mx-1 lg:-mx-4">
           {events.map((event) => (
             <div

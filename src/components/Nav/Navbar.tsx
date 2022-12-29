@@ -47,7 +47,7 @@ export const Navbar: FC = () => {
       className="relative sticky top-0 w-full bg-white backdrop-filter backdrop-blur-lg bg-opacity-25 border-b border-gray-300"
       style={{ zIndex: 1, position: "absolute" }}
     >
-      <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+      <div className="justify-between px-4 mx-auto lg:max-w-12xl md:items-center md:flex md:px-12">
         <div>
           <div className="flex items-center justify-between py-3 md:py-3 md:block">
             <img src={logo} alt="jcor_logo" className="h-16" />
