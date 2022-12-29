@@ -50,9 +50,7 @@ export const Navbar: FC = () => {
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-3 md:block">
-            <a href="javascript:void(0)">
-              <img src={logo} alt="jcor_logo" className="h-16" />
-            </a>
+            <img src={logo} alt="jcor_logo" className="h-16" />
             <div className="md:hidden">
               <button
                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
@@ -104,6 +102,7 @@ export const Navbar: FC = () => {
                   onClick={(e) => {
                     e.preventDefault();
                     navigate("/");
+                    setNavbar(!navbar);
                   }}
                 >
                   Home
@@ -115,6 +114,7 @@ export const Navbar: FC = () => {
                   onClick={(e) => {
                     e.preventDefault();
                     navigate("/about");
+                    setNavbar(!navbar);
                   }}
                 >
                   About

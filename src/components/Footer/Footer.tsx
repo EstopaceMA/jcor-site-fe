@@ -74,7 +74,7 @@ export const Footer: FC = () => {
 
       <div
         className="text-center p-4"
-        style={{ backgroundColor: "rgba(0, 0, 0, 0.2);" }}
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
       >
         © {new Date().getFullYear()} -
         <a className="text-whitehite" href="https://jcor.netlify.app/">

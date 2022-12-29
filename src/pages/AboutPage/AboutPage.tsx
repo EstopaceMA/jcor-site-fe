@@ -19,7 +19,10 @@ export const AboutPage = () => {
 
       <section className="mt-32">
         <div className="flex flex-col md:flex-row items-center md:items-start md:justify-evenly">
-          <img className="w-11/12 md:w-5/12" src="/assets/images/pastor_lheo.jpg"/>
+          <img
+            className="w-11/12 md:w-5/12"
+            src="/assets/images/pastor_lheo.jpg"
+          />
 
           <div className="mt-10 w-11/12 md:w-6/12 text-center md:text-right">
             <p className="text-7xl font-bold">Meet our Lead Pastor</p>
@@ -44,10 +47,10 @@ export const AboutPage = () => {
         <p className="text-5xl font-bold">History</p>
 
         <div className="mt-5">
-          {ChurchHistory.map((history) => (
-            <div className="mt-7">
-              <p className="text-2xl font-bold">{history.title}</p>
-              <p>{history.desc}</p>
+          {ChurchHistory.map(({ id, title, desc }) => (
+            <div key={id} className="mt-7">
+              <p className="text-2xl font-bold">{title}</p>
+              <p>{desc}</p>
             </div>
           ))}
         </div>
