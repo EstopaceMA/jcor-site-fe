@@ -1,31 +1,8 @@
 import sundayService from "/assets/images/sunday-service.jpeg";
 import prayerMeeting from "/assets/images/prayer-meeting.jpeg";
 import youthBs from "/assets/images/youth-bs.jpeg";
-import { useEffect } from "react";
-import "./SchedulesSection.css";
 
 export const SchedulesSection = () => {
-  const revealAnimation = () => {
-    const reveals = document.querySelectorAll(".reveal");
-
-    for (let i = 0; i < reveals.length; i++) {
-      const windowHeight = window.innerHeight;
-      const elementTop = reveals[i].getBoundingClientRect().top;
-      const elementVisible = 150;
-
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
-      }
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", revealAnimation);
-    return () => {
-      window.removeEventListener("scroll", revealAnimation);
-    };
-  }, []);
-
   return (
     <>
       <div className="container my-12 mx-auto px-4 md:px-12 text-center">

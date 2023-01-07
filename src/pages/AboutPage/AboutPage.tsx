@@ -12,12 +12,12 @@ export const AboutPage = () => {
         </div>
       </section>
 
-      <p className="mx-5 md:mx-0 text-center text-3xl font-bold">
+      <p className="mx-5 md:mx-0 text-center text-3xl font-bold reveal">
         Empowering people to use what God has given them to serve and love our
         world through relational disciple-making.
       </p>
 
-      <section className="mt-32">
+      <section className="mt-32 reveal">
         <div className="flex flex-col md:flex-row items-center md:items-start md:justify-evenly">
           <img
             className="w-11/12 md:w-5/12"
@@ -48,7 +48,7 @@ export const AboutPage = () => {
 
         <div className="mt-5">
           {ChurchHistory.map(({ id, title, desc }) => (
-            <div key={id} className="mt-7">
+            <div key={id} className="mt-7 reveal">
               <p className="text-2xl font-bold">{title}</p>
               <p>{desc}</p>
             </div>
@@ -60,7 +60,7 @@ export const AboutPage = () => {
         <p className="text-5xl font-bold">Mission and Vision</p>
 
         <div className="mt-5">
-          <div className="mt-7">
+          <div className="mt-7 reveal">
             <p className="text-2xl font-bold">Mission</p>
             <p>
               Cras rutrum mollis odio. Curabitur ex magna, consequat id bibendum
@@ -76,7 +76,7 @@ export const AboutPage = () => {
             </p>
           </div>
 
-          <div className="mt-7">
+          <div className="mt-7 reveal">
             <p className="text-2xl font-bold">Vision</p>
             <p>
               Suspendisse nec vehicula ipsum. Proin at lorem vel arcu feugiat
