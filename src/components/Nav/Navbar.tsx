@@ -45,7 +45,7 @@ export const Navbar: FC = () => {
       /** I'm also going to add a custom easing curve and duration for the animation **/
       transition={{ ease: [0.1, 0.25, 0.3, 1], duration: 0.7 }}
       className="relative sticky top-0 w-full bg-white backdrop-filter backdrop-blur-lg bg-opacity-25 border-b border-gray-300"
-      style={{ zIndex: 1, position: "absolute" }}
+      style={{ zIndex: 1, position: "fixed" }}
     >
       <div className="justify-between px-4 mx-auto lg:max-w-12xl md:items-center md:flex md:px-12">
         <div>
@@ -55,6 +55,7 @@ export const Navbar: FC = () => {
               <button
                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
                 onClick={() => setNavbar(!navbar)}
+                disabled={hidden}
               >
                 {navbar ? (
                   <svg
